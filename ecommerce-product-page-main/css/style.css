@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* navbar design */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav .container {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.container .left ul,
+.container .right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container ul li {
+  margin: 10px;
+  list-style: none;
+}
+.container ul li p {
+  color: hsl(220, 14%, 75%);
+}
+.container ul li p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.container .left ul li:hover::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  background: hsl(26, 100%, 55%);
+  position: absolute;
+  bottom: -4px;
+}
+.right ul li img {
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+#Product {
+  display: flex;
+  margin-top: 70px;
+}
+#Product .container {
+  display: flex;
+}
+#Product .container .small-Product {
+  width: 40%;
+  padding: 50px;
+  margin-right: 30px;
+}
+#Product .container .small-Product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.small-img {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img .img-col {
+  width: 20%;
+  /* border: 1px solid; */
+}
+.small-img .img-col img {
+  border: 2px solid hsl(26, 100%, 55%);
+  cursor: pointer;
+}
+.small-img .img-col img:hover {
+  filter: contrast(60%);
+}
+#Product .container .detail {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+}
+#Product .container .detail h6 {
+  color: hsl(26, 100%, 55%);
+}
+#Product .container .detail h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
+}
+#Product .container .detail p {
+  color: hsl(220, 14%, 75%);
+}
+#Product .container .detail .price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#Product .container .detail .price h6 {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 10px;
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 5px;
+}
+#Product .container .detail .addToCart {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+#Product .container .detail .addToCart .counter {
+  display: flex;
+  margin-right: 20px;
+
+  justify-content: center;
+  align-items: center;
+}
+#Product .container .detail .addToCart .counter p {
+  padding: 10px 20px 10px 20px;
+  background-color: hsl(223, 64%, 98%);
+  cursor: pointer;
+  color: black;
+}
+#Product .container .detail .addToCart .counter .minus {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#Product .container .detail .addToCart .counter .plus {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#Product .container .detail .addToCart button {
+  border-style: none;
+  height: 40px;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+}
+#Intro {
+  color: hsl(0, 0%, 41%);
+  margin: 20px;
+}
+img {
+  margin-right: 10px;
+}
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#mobile {
+  display: none;
+  text-align: end;
+}
+#close{
+  visibility: hidden;
+}
+.Register {
+  font-size: 18px;
+  font-family: Arial;
+  width: 140px;
+  height: 44px;
+  border-width: 3px;
+  color: rgba(0, 0, 0, 1);
+  border-color: black;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  background-color: transparent;
+}
+.hero {
+  height: 550px;
+  width: 500px;
+}
+.hero-img {
+  text-align: center;
+}
+#lower-part {
+  padding-top: 50px;
+}
+.text {
+  padding: 100px;
+}
+.Register2 {
+  font-size: 18px;
+  font-family: Arial;
+  width: 140px;
+  height: 44px;
+  border-width: 3px;
+  color: black;
+  border-color: black;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  background-color: transparent;
+}
+.Register2:hover {
+  background-color: black;
+  color: white;
+}
+.btn2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mono {
+  padding-top: 100px;
+}
+.Login {
+  margin-left: auto;
+}
+.snap {
+  display: flex;
+}
+@media (max-width: 799px) or (min-width: 1440px) {
+  #Intro {
+    text-align: center;
+  }
+  .hero {
+    height: 400px;
+    width: 350px;
+  }
+  .text {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .Login {
+    margin-left: initial;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+  .snap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    position: fixed;
+    margin-left: auto;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+  }
+  .active{
+    right: 0px;
+  }
+  #mobile {
+    display: block;
+    text-align: end;
+  }
+  #close{
+    visibility: visible;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
